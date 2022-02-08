@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FaTwitter, FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const About = () => {
