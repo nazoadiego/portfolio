@@ -14,7 +14,7 @@ function App() {
 				</header>
 				<main className="lg:w-5/6 flex flex-col px-8 my-8 lg:px-16 h-full">
 					<Switch>
-						<Route exact path="/portfolio-react">
+						<Route exact path="/home">
 							<Home />
 						</Route>
 						<Route path="/about">
