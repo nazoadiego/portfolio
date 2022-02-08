@@ -1,0 +1,61 @@
+@tailwind base;
+
+@layer base {
+	h1 {
+		font-weight: 600;
+		font-size: 3rem;
+		@apply text-black dark:text-flowerblue-50;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 2.5rem;
+		@apply text-black dark:text-flowerblue-50;
+	}
+
+	h3 {
+		font-weight: 600;
+		@apply text-2xl;
+		@apply text-black dark:text-flowerblue-50;
+	}
+
+	a {
+		@apply text-flowerblue-600;
+	}
+}
+
+@tailwind components;
+
+@layer components {
+	.card {
+		@apply text-flowerblue-50 flex justify-center items-center rounded-lg shadow-lg m-1;
+	}
+
+	.card h2 {
+		@apply text-flowerblue-50;
+	}
+
+	.card-project {
+		@apply bg-flowerblue-700 flex flex-col rounded-lg shadow-lg mx-1 mt-2;
+	}
+
+	.card-project h3 {
+		@apply text-flowerblue-50;
+	}
+
+	.btn-project-visit {
+		@apply bg-flowerblue-50 rounded-lg shadow-lg shadow-flowerblue-700 py-2 px-4 ml-2;
+	}
+	.btn-project-github {
+		@apply text-flowerblue-50 bg-flowerblue-900 rounded-lg shadow-lg shadow-flowerblue-700 p-2;
+	}
+
+	.navbar-mobile {
+		@apply lg:hidden py-2 bg-black w-full z-50 h-auto;
+	}
+	.navbar-desktop {
+		@apply hidden lg:flex lg:w-1/6 flex-col justify-center text-center bg-black;
+	}
+}
+
+@tailwind utilities;

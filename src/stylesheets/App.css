@@ -1,0 +1,53 @@
+/* Fonts */
+body {
+	font-family: "Montserrat", "Helvetica", "sans-serif";
+}
+
+/* Animations */
+.delay-1 {
+	animation-delay: 1s;
+}
+.delay-2 {
+	animation-delay: 1.5s;
+}
+.delay-3 {
+	animation-delay: 2;
+}
+.delay-4 {
+	animation-delay: 2.5s;
+}
+
+/* Cards */
+
+.rounded-left {
+	border-radius: 0.5rem 0 0 0.5rem;
+}
+
+/* List */
+li {
+	list-style: disc;
+}
+
+/* Tooltip */
+.tooltip {
+	display: none;
+	overflow: hidden;
+}
+
+.hasTooltip:hover .tooltip,
+.tooltip:hover {
+	display: block;
+}
+
+.hasTooltip:hover svg {
+	display: none;
+}
+
+/* Navbar */
+.nav-item {
+	line-height: 3.5rem;
+	display: flex;
+	justify-content: center;
+	transition: 0.3s;
+	color: white;
+}
