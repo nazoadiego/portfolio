@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const NavItems = () => {
 	return (
 		<>
-			<Link to="/home">
+			<Link to="/portfolio-react">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					Home
 				</h2>
