@@ -51,3 +51,16 @@ li {
 	transition: 0.3s;
 	color: white;
 }
+
+/* Card */
+.card-artist {
+	background-image: url(../images/kinoko.jpg);
+}
+
+.linear-gradient {
+	background: linear-gradient(
+		360deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 80%
+	);
+}

@@ -1,6 +1,6 @@
 import RecentProject from "../components/RecentProject";
 
-const Home = () => {
+const HomePage = () => {
 	return (
 		<>
 			<div className="home-top animate-appear">
@@ -23,4 +23,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HomePage;

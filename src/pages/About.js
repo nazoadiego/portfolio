@@ -1,6 +1,6 @@
 import { FaTwitter, FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-const About = () => {
+const AboutPage = () => {
 	return (
 		<>
 			<div className="about-top">
@@ -76,7 +76,7 @@ const About = () => {
 				</h2>
 				<div className="grid grid-cols-2 lg:grid-cols-4">
 					<a href="https://github.com/nazoadiego">
-						<div className="card py-[10px] animate-appear4 bg-flowerblue-900">
+						<div className="card animate-appear4 bg-flowerblue-900 py-[10px]">
 							<h2>
 								<FaGithub />
 							</h2>
@@ -84,24 +84,24 @@ const About = () => {
 					</a>
 
 					<a href="https://linkedin.com/in/nazoa-diego/">
-						<div className="card py-[10px] animate-appear4 bg-flowerblue-800">
+						<div className="card animate-appear4 bg-flowerblue-800 py-[10px]">
 							<h2>
 								<FaLinkedinIn />
 							</h2>
 						</div>
 					</a>
 
-					<div className="card py-[10px] animate-appear4 bg-flowerblue-700 hasTooltip">
+					<div className="card hasTooltip animate-appear4 bg-flowerblue-700 py-[10px]">
 						<h2>
 							<FaEnvelope />
 						</h2>
 						<div className="tooltip">
-							<p className="font-bold text-base">dnazoa737@gmail.com</p>
+							<p className="text-base font-bold">dnazoa737@gmail.com</p>
 						</div>
 					</div>
 
 					<a href="https://twitter.com/nzoadiego/">
-						<div className="card py-[10px] animate-appear4 bg-flowerblue-600">
+						<div className="card animate-appear4 bg-flowerblue-600 py-[10px]">
 							<h2>
 								<FaTwitter />
 							</h2>
@@ -113,4 +113,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default AboutPage;

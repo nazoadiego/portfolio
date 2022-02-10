@@ -1,129 +1,66 @@
-const Projects = () => {
+import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
+import CardProject from "../components/CardProject";
+import ProjectDetails from "./ProjectDetails";
+
+const ProjectsPage = () => {
+	const projects = [
+		{
+			id: "kinoko",
+			title: "Kinoko",
+			subtitle: "Timeboxing App",
+			tags: ["Ruby", "React"],
+			image_path: "kinoko",
+			github: "https://github.com/nazoadiego/Kinoko",
+			visit: "https://www.kinoko.app/",
+		},
+		{
+			id: "bookanartist",
+			title: "BookAnArtist",
+			subtitle: "Concert Booking",
+			tags: ["Ruby", "React"],
+			image_path: "bookanartist",
+			github: "https://github.com/nazoadiego/BookAnArtist",
+			visit: "https://bookanartist.herokuapp.com/",
+		},
+		{
+			id: "kinoko-crush",
+			title: "Kinoko Crush",
+			tags: ["JavaScript"],
+			image_path: "kinoko-crush",
+			subtitle: "Candy Crush Clone but with Kinokos",
+			github: "https://github.com/nazoadiego/kinoko-crush-js",
+			visit: "https://nazoadiego.github.io/kinoko-crush-js/",
+		},
+	];
+
+	let { path, url } = useRouteMatch();
+
 	return (
 		<>
-			<h1 className="underline">Projects</h1>
+			<Switch>
+				<Route exact path={path}>
+					<h1 className="underline">Projects</h1>
 
-			<div className="grid lg:grid-cols-2">
-				<div>
-					<h2 className="animate-appear">Completed</h2>
-					<div className="card-project animate-appear2">
-						<div className="flex flex-col items-start m-4">
-							<h3>Kinoko</h3>
-							<h5 className="text-flowerblue-400">TIMEBOXING APP</h5>
-						</div>
-						<div className="flex justify-end mb-8 mr-8">
-							<a href="https://github.com/nazoadiego/Kinoko">
-								<div className="btn-project-github">
-									<h5>Github</h5>
-								</div>
-							</a>
-							<a href="https://www.kinoko.app/">
-								<div className="btn-project-visit">
-									<h5 className="text-black">Visit</h5>
-								</div>
-							</a>
-						</div>
+					<div className="grid gap-2 grid-cols-1 lg:grid-cols-3">
+						{projects.map((project) => {
+							return (
+								<Link key={project.id} to={`${url}/${project.id}`}>
+									<CardProject
+										title={project.title}
+										subtitle={project.subtitle}
+										image_path={project.image_path}
+									/>
+								</Link>
+							);
+						})}
 					</div>
-
-					<div className="card-project animate-appear2">
-						<div className="flex flex-col items-start m-4">
-							<h3>BookAnArtist</h3>
-							<h5 className="text-flowerblue-400">BOOKING WEBSITE</h5>
-						</div>
-						<div className="flex justify-end items-end mb-8 mr-8">
-							<a href="https://github.com/nazoadiego/BookAnArtist">
-								<div className="btn-project-github">
-									<h5>Github</h5>
-								</div>
-							</a>
-							<a href="https://bookanartist.herokuapp.com/">
-								<div className="btn-project-visit">
-									<h5 className="text-black">Visit</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<h2 className="animate-appear">On-going</h2>
-					<div className="card-project animate-appear2">
-						<div className="flex flex-col items-start m-4">
-							<h3>Kinoko V2</h3>
-							<h5 className="text-flowerblue-400">TIMEBOXING APP</h5>
-						</div>
-						<div className="flex justify-end mb-8 mr-8">
-							<a href="https://github.com/nazoadiego/Kinoko">
-								<div className="btn-project-github">
-									<h5>Github</h5>
-								</div>
-							</a>
-							<a href="https://www.kinoko.app/">
-								<div className="btn-project-visit">
-									<h5 className="text-black">Visit</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div className="card-project animate-appear2">
-						<div className="flex flex-col items-start m-4">
-							<h3>BookAnArtist V2</h3>
-							<h5 className="text-flowerblue-400">BOOKING WEBSITE</h5>
-						</div>
-						<div className="flex justify-end mb-8 mr-8">
-							<a href="https://github.com/nazoadiego/BookAnArtist">
-								<div className="btn-project-github">
-									<h5>Github</h5>
-								</div>
-							</a>
-							<a href="https://bookanartist.herokuapp.com/">
-								<div className="btn-project-visit">
-									<h5 className="text-black">Visit</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div>
-				<h2 className="animate-appear3">Planned</h2>
-
-				<div className="grid grid-cols-2">
-					<div className="card-project py-4 animate-appear4">
-						<div className="flex flex-col items-start m-4">
-							<h3>Mural</h3>
-							<h5 className="text-flowerblue-400">LYRICS TRANSLATION</h5>
-						</div>
-						<div className="flex justify-end mb-8 mr-8">
-							<div className="btn-project-github">
-								<h5>Github</h5>
-							</div>
-							<div className="btn-project-visit">
-								<h5 className="text-black">Visit</h5>
-							</div>
-						</div>
-					</div>
-
-					<div className="card-project py-4 animate-appear4">
-						<div className="flex flex-col items-start m-4">
-							<h3>Arukeyo</h3>
-							<h5 className="text-flowerblue-400">LANGUAGE LEARNING BLOG</h5>
-						</div>
-						<div className="flex justify-end mb-8 mr-8">
-							<div className="btn-project-github">
-								<h5>Github</h5>
-							</div>
-							<div className="btn-project-visit">
-								<h5 className="text-black">Visit</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+				</Route>
+				<Route path={`${path}/:projectId`}>
+					<ProjectDetails projects={projects} />
+				</Route>
+			</Switch>
 		</>
 	);
 };
 
-export default Projects;
+export default ProjectsPage;

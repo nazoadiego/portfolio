@@ -1,27 +1,29 @@
 import "./stylesheets/App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
+import HomePage from "./pages/Home";
+import AboutPage from "./pages/About";
+import ProjectsPage from "./pages/Projects";
+import ProjectDetails from "./pages/ProjectDetails";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
 	return (
 		<Router>
-			<div className="min-h-screen bg-white dark:bg-[#0F0F0F] lg:flex transition-colors duration-300">
+			<div className="min-h-screen bg-white transition-colors duration-300 dark:bg-[#0F0F0F] lg:flex">
 				<header className="navbar-mobile lg:navbar-desktop">
 					<Nav />
 				</header>
-				<main className="lg:w-5/6 flex flex-col px-8 my-8 lg:px-16 h-full">
+
+				<main className="my-8 flex h-full flex-col px-8 lg:w-5/6 lg:px-16">
 					<Switch>
 						<Route exact path="/portfolio-react">
-							<Home />
+							<HomePage />
 						</Route>
 						<Route path="/about">
-							<About />
+							<AboutPage />
 						</Route>
 						<Route path="/projects">
-							<Projects />
+							<ProjectsPage />
 						</Route>
 					</Switch>
 				</main>
