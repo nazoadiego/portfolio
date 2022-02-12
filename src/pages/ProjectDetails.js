@@ -21,7 +21,7 @@ const ProjectDetails = (props) => {
 			<div className="flex flex-col justify-center ml-10">
 				<h2>{title}</h2>
 				<h3>{subtitle}</h3>
-				<a href={visit}>Visit</a>
+				<a href={visit}>Live Preview</a>
 				<a href={github}>Github</a>
 				<ul>{tagsList}</ul>
 			</div>
