@@ -21,8 +21,14 @@ const ProjectDetails = (props) => {
 			<div className="flex flex-col justify-center ml-10">
 				<h2>{title}</h2>
 				<h3>{subtitle}</h3>
-				<a href={visit}>Live Preview</a>
-				<a href={github}>Github</a>
+				<div className="flex justify-start">
+					<a href={visit} className="btn-project-visit">
+						Live Preview
+					</a>
+					<a href={github} className="btn-project-github">
+						Github
+					</a>
+				</div>
 				<ul>{tagsList}</ul>
 			</div>
 		</div>
