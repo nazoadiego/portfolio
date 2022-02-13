@@ -16,7 +16,12 @@ canvas {
 
 /* List */
 li {
-	list-style: disc;
+	list-style: none;
+}
+
+li:before {
+	content: "• ";
+	color: #3845ca; /* or whatever color you prefer */
 }
 
 /* Tooltip */

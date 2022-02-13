@@ -35,10 +35,6 @@
 		@apply text-base font-semibold;
 	}
 
-	p {
-		@apply text-base;
-	}
-
 	a {
 		@apply text-flowerblue-600;
 	}
@@ -47,8 +43,12 @@
 @tailwind components;
 
 @layer components {
-	.card {
+	.about-card {
 		@apply m-1 flex items-center justify-center rounded-lg shadow-lg;
+	}
+
+	.about-card h2 {
+		@apply text-gray-200;
 	}
 
 	.btn-project-visit {
