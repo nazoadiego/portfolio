@@ -3,6 +3,7 @@ import Kinoko from "../components/Kinoko";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import DiegoIs from "../components/DiegoIs";
 
 const HomePage = () => {
 	return (
@@ -29,6 +30,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
+			<DiegoIs />
 			<div className="home-bottom mt-8">
 				<h2 className="animate-appear2 text-black dark:text-flowerblue-50">
 					Most recent project

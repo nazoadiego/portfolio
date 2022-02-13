@@ -54,7 +54,7 @@
 		@apply z-50 flex h-auto w-full justify-center bg-black py-2 lg:hidden;
 	}
 	.navbar-desktop {
-		@apply hidden bg-black text-center lg:flex lg:w-1/6 lg:flex-col lg:justify-center;
+		@apply hidden bg-black h-screen sticky text-center top-0 lg:flex lg:w-1/6 lg:flex-col lg:justify-center;
 	}
 }
 

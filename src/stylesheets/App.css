@@ -4,17 +4,8 @@ body {
 }
 
 /* Animations */
-.delay-1 {
-	animation-delay: 1s;
-}
-.delay-2 {
-	animation-delay: 1.5s;
-}
-.delay-3 {
-	animation-delay: 2;
-}
-.delay-4 {
-	animation-delay: 2.5s;
+canvas {
+	height: 35vh;
 }
 
 /* Cards */
@@ -63,8 +54,4 @@ li {
 		rgba(0, 0, 0, 1) 0%,
 		rgba(0, 0, 0, 0) 80%
 	);
-}
-
-canvas {
-	height: 35vh;
 }

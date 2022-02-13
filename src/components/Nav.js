@@ -1,13 +1,11 @@
 import NavItems from "./NavItems";
 
 const Nav = () => {
-  return (
-    <>
-      <div className="topbar lg:sidebar">
-        <NavItems />
-      </div>
-    </>
-  );
+	return (
+		<nav>
+			<NavItems />
+		</nav>
+	);
 };
 
 export default Nav;
