@@ -44,7 +44,7 @@
 	}
 
 	.btn-project-visit {
-		@apply ml-2 rounded-lg bg-flowerblue-100 hover:bg-flowerblue-50 py-2 px-4 shadow-lg;
+		@apply ml-2 rounded-lg text-flowerblue-900 border-flowerblue-900 border-solid border-2 bg-white hover:bg-flowerblue-50 py-2 px-4 shadow-lg;
 	}
 	.btn-project-github {
 		@apply rounded-lg bg-flowerblue-900 hover:bg-flowerblue-800 p-2 text-flowerblue-50 shadow-lg;
