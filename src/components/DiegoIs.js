@@ -3,10 +3,10 @@ import { FaTwitter, FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
 const DiegoIs = () => {
 	return (
 		<>
-			<div className="about-top">
+			<div>
 				<h1>Diego is...</h1>
 			</div>
-			<div className="home-bottom mt-8">
+			<div className="mt-2">
 				<h2 className="animate-appear">
 					A{" "}
 					<span className="text-flowerblue-800 dark:text-flowerblue-600">

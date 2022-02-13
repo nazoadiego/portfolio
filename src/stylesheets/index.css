@@ -1,22 +1,42 @@
 @tailwind base;
 
 @layer base {
+	body {
+		@apply font-sans font-normal leading-relaxed text-gray-800 dark:text-gray-200;
+	}
+
 	h1 {
-		font-weight: 600;
 		font-size: 3rem;
-		@apply text-black dark:text-flowerblue-50;
+		@apply font-semibold;
 	}
 
 	h2 {
-		font-weight: 600;
 		font-size: 2.5rem;
-		@apply text-black dark:text-flowerblue-50;
+		@apply font-semibold;
 	}
 
 	h3 {
-		font-weight: 600;
-		@apply text-2xl;
-		@apply text-black dark:text-flowerblue-50;
+		@apply text-2xl font-semibold;
+	}
+
+	h4 {
+		@apply text-xl font-semibold;
+	}
+
+	h5 {
+		@apply text-xl  font-semibold;
+	}
+
+	h5 {
+		@apply text-lg font-semibold;
+	}
+
+	h6 {
+		@apply text-base font-semibold;
+	}
+
+	p {
+		@apply text-base;
 	}
 
 	a {
@@ -28,19 +48,7 @@
 
 @layer components {
 	.card {
-		@apply m-1 flex items-center justify-center rounded-lg text-flowerblue-50 shadow-lg;
-	}
-
-	.card h2 {
-		@apply text-flowerblue-50;
-	}
-
-	.card-project {
-		@apply mx-1 mt-2 flex flex-col rounded-lg bg-flowerblue-700 shadow-lg;
-	}
-
-	.card-project h3 {
-		@apply text-flowerblue-50;
+		@apply m-1 flex items-center justify-center rounded-lg shadow-lg;
 	}
 
 	.btn-project-visit {

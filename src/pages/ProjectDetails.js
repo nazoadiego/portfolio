@@ -10,21 +10,25 @@ const ProjectDetails = (props) => {
 	});
 
 	return (
-		<div className="grid grid-cols 1 lg:grid-cols-2 shadow-xl rounded-xl">
-			<div className="flex flex-col justify-center ml-10">
+		<div className="grid grid-cols 1 lg:grid-cols-2">
+			<div className="flex flex-col justify-center">
+				<h5 className="uppercase font-thin">{subtitle}</h5>
 				<h2>{title}</h2>
-				<h3>{subtitle}</h3>
 				<div className="flex justify-start">
-					<a href={visit} className="btn-project-visit">
+					<a href={visit} className="btn-project-visit mr-2">
 						Live Preview
 					</a>
 					<a href={github} className="btn-project-github">
 						Github
 					</a>
 				</div>
-				<ul>{tagsList}</ul>
 			</div>
 			<div>
+				<h3>Tecnologies</h3>
+				<ul className="ml-5 grid grid-cols-2">{tagsList}</ul>
+			</div>
+			<div>
+				<h3>Screenshots</h3>
 				<img
 					src={require("../images/" + image_path + ".jpg")}
 					alt={title + ". " + subtitle}

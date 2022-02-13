@@ -3,13 +3,12 @@ import Kinoko from "../components/Kinoko";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import DiegoIs from "../components/DiegoIs";
 
 const HomePage = () => {
 	return (
 		<>
 			<div className="">
-				<div className="home-top animate-appear flex flex-col lg:flex-row">
+				<div className="animate-appear flex flex-col lg:flex-row">
 					<Canvas clasName="canvas">
 						<OrbitControls enableZoom={false} />
 						<ambientLight intensity={0.5} />
@@ -30,8 +29,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<DiegoIs />
-			<div className="home-bottom mt-8">
+			<div className="mt-8">
 				<h2 className="animate-appear2 text-black dark:text-flowerblue-50">
 					Most recent project
 				</h2>

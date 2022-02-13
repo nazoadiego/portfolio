@@ -8,7 +8,16 @@ const ProjectsPage = () => {
 			id: "kinoko",
 			title: "Kinoko",
 			subtitle: "Timeboxing App",
-			tags: ["Ruby"],
+			tags: [
+				"Ruby",
+				"Ruby On Rails",
+				"JavaScript",
+				"Webpack",
+				"PostgreSQL",
+				"SASS",
+				"Tailwind CSS",
+				"AnimeJS",
+			],
 			image_path: "kinoko",
 			github: "https://github.com/nazoadiego/Kinoko",
 			visit: "https://www.kinoko.app/",
@@ -17,7 +26,16 @@ const ProjectsPage = () => {
 			id: "bookanartist",
 			title: "BookAnArtist",
 			subtitle: "Concert Booking",
-			tags: ["Ruby"],
+			tags: [
+				"Ruby",
+				"Ruby On Rails",
+				"JavaScript",
+				"Webpack",
+				"PostgreSQL",
+				"SASS",
+				"Tailwind CSS",
+				"AnimeJS",
+			],
 			image_path: "bookanartist",
 			github: "https://github.com/nazoadiego/BookAnArtist",
 			visit: "https://bookanartist.herokuapp.com/",
@@ -34,7 +52,7 @@ const ProjectsPage = () => {
 		{
 			id: "portfolio",
 			title: "Portfolio",
-			tags: ["JavaScript", "React", "Three.js"],
+			tags: ["JavaScript", "React", "Webpack", "Babel", "Three.js"],
 			image_path: "portfolio",
 			subtitle: "All the work I have done. My first React project too",
 			github: "https://github.com/nazoadiego/react-portfolio",
@@ -50,7 +68,7 @@ const ProjectsPage = () => {
 				<Route exact path={path}>
 					<h1 className="underline">Projects</h1>
 
-					<div className="grid gap-2 grid-cols-1 lg:grid-cols-3">
+					<div className="grid gap-2 grid-cols-1 lg:grid-cols-3 mt-4">
 						{projects.map((project) => {
 							return (
 								<Link key={project.id} to={`${url}/${project.id}`}>
