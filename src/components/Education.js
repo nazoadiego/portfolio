@@ -31,13 +31,10 @@ const Education = () => {
 				like Heroku. And since in programming you learn best by actively doing,
 				and your education falls completely on your own shoulders. After the
 				bootcamp I have continued to work on my own projects and continue to do
-				courses.{" "}
+				courses. Hearing and learning from people that know much more than I do,
+				which has always been an invaluable experience.{" "}
 			</p>
-			<p>
-				Hearing and learning from people that know much more than I do has
-				always been an invaluable experience. Theses are some of the courses I
-				have completed:
-			</p>
+			<p></p>
 		</div>
 	);
 };

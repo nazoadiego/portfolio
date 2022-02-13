@@ -2,7 +2,7 @@ const Technologies = () => {
 	const technologies = [
 		"Ruby",
 		"Ruby On Rails",
-		"JavaScript",
+		"JavaScript ES6",
 		"React",
 		"HTML5",
 		"CSS3",
