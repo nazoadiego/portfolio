@@ -15,13 +15,13 @@ function App() {
 
 				<main className="py-8 flex h-full flex-col px-8 lg:w-5/6 lg:px-16">
 					<Switch>
-						<Route exact path="/portfolio">
+						<Route exact path="/">
 							<HomePage />
 						</Route>
-						<Route path="/portfolio/about">
+						<Route path="/about">
 							<AboutPage />
 						</Route>
-						<Route path="/portfolio/projects">
+						<Route path="/projects">
 							<ProjectsPage />
 						</Route>
 					</Switch>
