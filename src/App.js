@@ -7,7 +7,7 @@ import { BrowserRouter as HashRouter, Route, Switch } from "react-router-dom";
 
 function App() {
 	return (
-		<HashRouter>
+		<HashRouter basename="/portfolio">
 			<div className="min-h-screen bg-white transition-colors duration-300 dark:bg-[#0F0F0F] lg:flex">
 				<header className="navbar-mobile lg:navbar-desktop">
 					<Nav />
