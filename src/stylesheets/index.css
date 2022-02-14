@@ -44,11 +44,12 @@
 
 @layer components {
 	.about-card {
+		height: 60px;
 		@apply m-1 flex items-center justify-center rounded-lg shadow-lg;
 	}
 
 	.about-card h2 {
-		@apply text-gray-200;
+		@apply text-gray-200 text-3xl lg:text-4xl;
 	}
 
 	.btn-project-visit {

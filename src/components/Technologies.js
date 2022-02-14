@@ -38,12 +38,12 @@ const Technologies = () => {
 	});
 	return (
 		<div className="mt-4 prose lg:prose-xl dark:prose-invert">
-			<h2 className="underline ml-8">Technologies</h2>
-			<ul className="grid gap-0 grid-cols-2 lg:grid-cols-3">
+			<h2 className="underline lg:ml-8">Technologies</h2>
+			<ul className="pl-0 grid gap-0 grid-cols-2 lg:grid-cols-3">
 				{technologiesList}
 			</ul>
-			<h2 className="underline ml-8">Courses</h2>
-			<ul>{coursesList}</ul>
+			<h2 className="underline lg:ml-8">Courses</h2>
+			<ul className="pl-0">{coursesList}</ul>
 		</div>
 	);
 };
