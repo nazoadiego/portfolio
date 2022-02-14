@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.e3c2e930.css",
-    "main.js": "/portfolio-react/static/js/main.e4d0d761.js",
+    "main.css": "/portfolio-react/static/css/main.1cf7b8af.css",
+    "main.js": "/portfolio-react/static/js/main.e4511e79.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/bookanartist.jpg": "/portfolio-react/static/media/bookanartist.a6393ce10bfef190fe17.jpg",
     "static/media/portfolio.jpg": "/portfolio-react/static/media/portfolio.9aa1eb27d536e752b6dc.jpg",
     "static/media/kinoko-crush.jpg": "/portfolio-react/static/media/kinoko-crush.df0982266bbf148c4cc9.jpg",
     "static/media/kinoko.jpg": "/portfolio-react/static/media/kinoko.e2389b4dfa21011832e4.jpg",
     "index.html": "/portfolio-react/index.html",
-    "main.e3c2e930.css.map": "/portfolio-react/static/css/main.e3c2e930.css.map",
-    "main.e4d0d761.js.map": "/portfolio-react/static/js/main.e4d0d761.js.map",
+    "main.1cf7b8af.css.map": "/portfolio-react/static/css/main.1cf7b8af.css.map",
+    "main.e4511e79.js.map": "/portfolio-react/static/js/main.e4511e79.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3c2e930.css",
-    "static/js/main.e4d0d761.js"
+    "static/css/main.1cf7b8af.css",
+    "static/js/main.e4511e79.js"
   ]
 }
