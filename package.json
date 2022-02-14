@@ -1,6 +1,6 @@
 {
-	"name": "portfolio-react",
-	"homepage": "https://nazoadiego.github.io/portfolio-react/",
+	"name": "portfolio",
+	"homepage": "https://nazoadiego.github.io/portfolio/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
