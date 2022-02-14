@@ -72,8 +72,8 @@ const ProjectsPage = () => {
       track of our progress and the most important features. And for version control
       it was very important that we had good communication and deadlines to put
       the work we had been doing together with Git/Github. Going from Bootstrap
-      to Tailwind was simple enough, but worth it. It did take a lot of time. From
-      Bootstrap I learned the benefit of using a framework for CSS. Namely, that it
+      to Tailwind took a lot of time, but it was simple enough and worth it in
+      end.From Bootstrap I learned the benefit of using a framework for CSS. Namely, that it
       gave structure and uniformity when working together. From Tailwind I learned
       about the importance of writing scalable and easier to customize CSS, while
       keeping the advantages of using an utility first framework.`,
@@ -86,7 +86,7 @@ const ProjectsPage = () => {
 			subtitle: "Candy Crush Clone",
 			github: "https://github.com/nazoadiego/kinoko-crush-js",
 			visit: "https://nazoadiego.github.io/kinoko-crush-js/",
-			overview: "A Candy Crush clone made in vanilla JavaScript.",
+			overview: `A Candy Crush clone made in vanilla JavaScript.`,
 			difficulties: `A technical challenge to practice the fundamentals of JavaScript.
       But more than technical, it was a challenge of my problem solving skills.
       How did I make the grid? How should program when there is a match? How do
