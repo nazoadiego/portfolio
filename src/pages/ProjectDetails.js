@@ -25,10 +25,20 @@ const ProjectDetails = (props) => {
 				<h5 className="uppercase font-thin">{subtitle}</h5>
 				<h2>{title}</h2>
 				<div className="flex">
-					<a href={visit} className="btn-project-visit mr-2">
+					<a
+						href={visit}
+						className="btn-project-visit mr-2"
+						target="_blank"
+						rel="noreferrer"
+					>
 						Live Preview
 					</a>
-					<a href={github} className="btn-project-github">
+					<a
+						href={github}
+						className="btn-project-github"
+						target="_blank"
+						rel="noreferrer"
+					>
 						Github
 					</a>
 				</div>
