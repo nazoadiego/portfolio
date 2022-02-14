@@ -3,7 +3,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
 
 const NavItems = () => {
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(true);
 
 	const toggleTheme = () => {
 		setDarkMode(!darkMode);
@@ -19,13 +19,13 @@ const NavItems = () => {
 				</h2>
 			</Link>
 
-			<Link to="/about">
+			<Link to="/portfolio/about">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					About
 				</h2>
 			</Link>
 
-			<Link to="/projects">
+			<Link to="/portfolio/projects">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					Projects
 				</h2>
