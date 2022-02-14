@@ -3,11 +3,11 @@ import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import ProjectsPage from "./pages/Projects";
 import Nav from "./components/Nav";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as HashRouter, Route, Switch } from "react-router-dom";
 
 function App() {
 	return (
-		<Router>
+		<HashRouter>
 			<div className="min-h-screen bg-white transition-colors duration-300 dark:bg-[#0F0F0F] lg:flex">
 				<header className="navbar-mobile lg:navbar-desktop">
 					<Nav />
@@ -27,7 +27,7 @@ function App() {
 					</Switch>
 				</main>
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 
