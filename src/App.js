@@ -15,7 +15,7 @@ function App() {
 
 				<main className="py-8 flex h-full flex-col px-8 lg:w-5/6 lg:px-16">
 					<Switch>
-						<Route exact path="/portfolio-react">
+						<Route exact path="/portfolio">
 							<HomePage />
 						</Route>
 						<Route path="/about">
