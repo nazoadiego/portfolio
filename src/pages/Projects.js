@@ -101,8 +101,8 @@ const ProjectsPage = () => {
 			tags: ["JavaScript ES6", "React", "Webpack", "Three.js"],
 			image_path: "portfolio",
 			subtitle: "Personal Portfolio",
-			github: "https://github.com/nazoadiego/react-portfolio",
-			visit: "https://nazoadiego.github.io/react-portfolio/",
+			github: "https://github.com/nazoadiego/portfolio",
+			visit: "https://nazoadiego.github.io/portfolio/",
 			overview: `The place where I display my work. Originally it was a Ruby on
       Rails app, but I decided to redo it as a single page application. Lots of
       first: first website using Tailwind CSS, first React App, and first page

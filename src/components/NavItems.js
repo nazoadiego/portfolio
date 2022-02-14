@@ -13,7 +13,7 @@ const NavItems = () => {
 
 	return (
 		<>
-			<Link to="/portfolio-react">
+			<Link to="/portfolio">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					Home
 				</h2>
