@@ -11,7 +11,6 @@ const Technologies = () => {
 		"Bootstrap",
 		"SQL",
 		"Webpack",
-		"Babel",
 		"Parcel",
 		"Git",
 		"GitHub",
