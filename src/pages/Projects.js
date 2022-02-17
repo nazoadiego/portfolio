@@ -1,6 +1,9 @@
 import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
+import { useState } from "react";
 import CardProject from "../components/CardProject";
 import ProjectDetails from "./ProjectDetails";
+import Filter from "../components/Filter";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectsPage = () => {
 	const projects = [
@@ -8,7 +11,8 @@ const ProjectsPage = () => {
 			id: "kinoko",
 			title: "Kinoko",
 			subtitle: "Pomodoro App",
-			tags: [
+			tags: ["Rails", "JavaScript"],
+			technologies: [
 				"HTML5",
 				"CSS3",
 				"Ruby",
@@ -27,9 +31,9 @@ const ProjectsPage = () => {
 			overview: `A productivity web application based on the popular pomodoro
       study method. It allows you to set a timer where you alternate between
       work time and break time. The app keeps track of your hours of work and
-      can display it both as statistics and as mysterious mushroom (kinoko) forest.`,
+      can display it both as statistics and as a mysterious mushroom (kinoko) forest.`,
 			difficulties: `There were two main difficulties with this project. The first
-      one was that this project was very ambitious about the relationships in our
+      one was that this project was very ambitious with the relationships in our
       database. The second one was that I wanted a very minimalist design, which
       always comes with the risk of it being plain instead of minimalist. Both
       were very humbling problems to have.`,
@@ -45,7 +49,8 @@ const ProjectsPage = () => {
 			id: "bookanartist",
 			title: "BookAnArtist",
 			subtitle: "Artist Booking",
-			tags: [
+			tags: ["Rails", "JavaScript"],
+			technologies: [
 				"HTML5",
 				"CSS3",
 				"Ruby",
@@ -81,7 +86,8 @@ const ProjectsPage = () => {
 		{
 			id: "kinoko-crush",
 			title: "Kinoko Crush",
-			tags: ["HTML5", "CSS3", "JavaScript ES6"],
+			tags: ["JavaScript"],
+			technologies: ["HTML5", "CSS3", "JavaScript ES6"],
 			image_path: "kinoko-crush",
 			subtitle: "Candy Crush Clone",
 			github: "https://github.com/nazoadiego/kinoko-crush-js",
@@ -98,7 +104,8 @@ const ProjectsPage = () => {
 		{
 			id: "portfolio",
 			title: "Portfolio",
-			tags: ["JavaScript ES6", "React", "Webpack", "Three.js"],
+			tags: ["JavaScript", "React"],
+			technologies: ["JavaScript ES6", "React", "Webpack", "Three.js"],
 			image_path: "portfolio",
 			subtitle: "Personal Portfolio",
 			github: "https://github.com/nazoadiego/portfolio",
@@ -116,6 +123,8 @@ const ProjectsPage = () => {
       of how to fix it.`,
 		},
 	];
+	const [filtered, setFiltered] = useState(projects);
+	const [activeTag, setActiveTag] = useState("");
 
 	let { path, url } = useRouteMatch();
 
@@ -124,20 +133,30 @@ const ProjectsPage = () => {
 			<Switch>
 				<Route exact path={path}>
 					<h1 className="underline">Projects</h1>
-
-					<div className="grid gap-2 grid-cols-1 lg:grid-cols-3 mt-4">
-						{projects.map((project) => {
-							return (
-								<Link key={project.id} to={`${url}/${project.id}`}>
-									<CardProject
-										title={project.title}
-										subtitle={project.subtitle}
-										image_path={project.image_path}
-									/>
-								</Link>
-							);
-						})}
-					</div>
+					<Filter
+						projects={projects}
+						setFiltered={setFiltered}
+						activeTag={activeTag}
+						setActiveTag={setActiveTag}
+					/>
+					<motion.div
+						layout
+						className="grid gap-2 grid-cols-1 lg:grid-cols-2 mt-4"
+					>
+						<AnimatePresence>
+							{filtered.map((project) => {
+								return (
+									<Link key={project.id} to={`${url}/${project.id}`}>
+										<CardProject
+											title={project.title}
+											subtitle={project.subtitle}
+											image_path={project.image_path}
+										/>
+									</Link>
+								);
+							})}
+						</AnimatePresence>
+					</motion.div>
 				</Route>
 				<Route path={`${path}/:projectId`}>
 					<ProjectDetails projects={projects} />

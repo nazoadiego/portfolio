@@ -8,15 +8,15 @@ const ProjectDetails = (props) => {
 		title,
 		subtitle,
 		image_path,
-		tags,
+		technologies,
 		github,
 		visit,
 		overview,
 		difficulties,
 		solutions,
 	} = project;
-	const tagsList = tags.map((tag) => {
-		return <li key={tag}>{tag}</li>;
+	const technologiesList = technologies.map((technology) => {
+		return <li key={technology}>{technology}</li>;
 	});
 
 	return (
@@ -59,7 +59,7 @@ const ProjectDetails = (props) => {
 				/>
 				<div className="prose lg:prose-xl dark:prose-invert mt-8">
 					<h3>Tecnologies</h3>
-					<ul className="ml-2 grid grid-cols-2">{tagsList}</ul>
+					<ul className="ml-2 grid grid-cols-2">{technologiesList}</ul>
 				</div>
 			</div>
 		</div>
