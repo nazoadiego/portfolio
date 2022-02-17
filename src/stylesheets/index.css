@@ -52,11 +52,24 @@
 		@apply text-gray-200 text-3xl lg:text-4xl;
 	}
 
-	.btn-project-visit {
-		@apply flex items-center justify-center rounded-lg text-flowerblue-900 border-flowerblue-900 border-solid border-2 bg-white hover:bg-flowerblue-50 py-2 px-4 shadow-lg;
+	.btn {
+		transition: ease 0.3s;
+		@apply flex items-center justify-center
+    rounded-lg shadow-lg
+    py-2 px-4;
 	}
-	.btn-project-github {
-		@apply flex items-center justify-center rounded-lg bg-flowerblue-900 hover:bg-flowerblue-800 p-2 text-flowerblue-50 shadow-lg py-2 px-4;
+	.btn-white {
+		@apply btn
+    text-flowerblue-900
+    bg-white hover:bg-flowerblue-50
+    border-flowerblue-900 dark:border-white border-solid border-2;
+	}
+
+	.btn-blue {
+		@apply btn
+   text-flowerblue-50
+   bg-flowerblue-900 hover:bg-flowerblue-800
+   border-flowerblue-900 border-solid border-2;
 	}
 
 	.navbar-mobile {

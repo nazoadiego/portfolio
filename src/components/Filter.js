@@ -21,9 +21,7 @@ const Filter = (props) => {
 				onClick={() => {
 					setActiveTag("");
 				}}
-				className={
-					activeTag === "" ? "btn-project-github" : "btn-project-visit"
-				}
+				className={activeTag === "" ? "btn-blue" : "btn-white"}
 			>
 				All
 			</button>
@@ -31,9 +29,7 @@ const Filter = (props) => {
 				onClick={() => {
 					setActiveTag("Rails");
 				}}
-				className={
-					activeTag === "Rails" ? "btn-project-github" : "btn-project-visit"
-				}
+				className={activeTag === "Rails" ? "btn-blue" : "btn-white"}
 			>
 				Rails
 			</button>
@@ -41,11 +37,7 @@ const Filter = (props) => {
 				onClick={() => {
 					setActiveTag("JavaScript");
 				}}
-				className={
-					activeTag === "JavaScript"
-						? "btn-project-github"
-						: "btn-project-visit"
-				}
+				className={activeTag === "JavaScript" ? "btn-blue" : "btn-white"}
 			>
 				JavaScript
 			</button>
@@ -53,9 +45,7 @@ const Filter = (props) => {
 				onClick={() => {
 					setActiveTag("React");
 				}}
-				className={
-					activeTag === "React" ? "btn-project-github" : "btn-project-visit"
-				}
+				className={activeTag === "React" ? "btn-blue" : "btn-white"}
 			>
 				React
 			</button>

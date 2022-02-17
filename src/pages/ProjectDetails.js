@@ -27,7 +27,7 @@ const ProjectDetails = (props) => {
 				<div className="flex">
 					<a
 						href={visit}
-						className="btn-project-visit mr-2"
+						className="btn-white mr-2"
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -35,7 +35,7 @@ const ProjectDetails = (props) => {
 					</a>
 					<a
 						href={github}
-						className="btn-project-github"
+						className="btn-blue"
 						target="_blank"
 						rel="noreferrer"
 					>
