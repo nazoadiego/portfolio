@@ -58,6 +58,7 @@
     rounded-lg shadow-lg
     py-2 px-4;
 	}
+
 	.btn-white {
 		@apply btn
     text-flowerblue-900
