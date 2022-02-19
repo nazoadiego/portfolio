@@ -4,6 +4,8 @@ const Technologies = () => {
 		"Ruby On Rails",
 		"JavaScript ES6",
 		"React",
+		"Redux",
+		"TypeScript",
 		"HTML5",
 		"CSS3",
 		"Sass",
