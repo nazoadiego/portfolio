@@ -23,7 +23,7 @@ const HomePage = () => {
 						</h1>
 						<h3>
 							<span className="text-flowerblue-800 dark:text-flowerblue-600">
-								Fullstack Developer
+								Web Developer
 							</span>
 						</h3>
 					</div>

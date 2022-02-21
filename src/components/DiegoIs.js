@@ -10,7 +10,7 @@ const DiegoIs = () => {
 				<h2 className="animate-appear">
 					A{" "}
 					<span className="text-flowerblue-800 dark:text-flowerblue-600">
-						fullstack
+						passionate
 					</span>{" "}
 					web developer
 				</h2>
