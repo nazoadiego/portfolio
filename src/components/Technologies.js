@@ -27,7 +27,7 @@ const Technologies = () => {
 		);
 	});
 	const courses = [
-		"Fullstack Web Development by Le Wagon",
+		"Full Stack Web Development by Le Wagon",
 		"Complete Intro to Web Development by Brian Holt",
 		"Getting Started with CSS by Jen Kramer",
 		"CSS Grid & Flexbox for Responsive Layout by Jen Kramer",

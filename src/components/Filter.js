@@ -31,7 +31,7 @@ const Filter = (props) => {
 				}}
 				className={activeTag === "Rails" ? "btn-blue" : "btn-white"}
 			>
-				Rails
+				Ruby On Rails
 			</button>
 			<button
 				onClick={() => {

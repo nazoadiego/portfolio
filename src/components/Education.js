@@ -19,7 +19,7 @@ const Education = () => {
 				the decision of becoming a web developer. I wanted to work with other
 				people on delivering the best projects possible, and I wanted to keep
 				learning and growing. That is when I decided to enroll in Le Wagon
-				bootcamp for fullstack web development, which was the best learning
+				bootcamp for full stack web development, which was the best learning
 				experience of my life. An intensive course of 8 hours a day, always
 				focused on learning by doing and working with others (pair programming,
 				projects).
