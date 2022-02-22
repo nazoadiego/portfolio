@@ -1,6 +1,6 @@
 const Education = () => {
 	return (
-		<div className="mt-4 prose lg:prose-xl dark:prose-invert">
+		<>
 			<h2 className="underline">Education</h2>
 			<p>
 				I had been studying literature in university a few years when I finally
@@ -35,7 +35,7 @@ const Education = () => {
 				which has always been an invaluable experience.{" "}
 			</p>
 			<p></p>
-		</div>
+		</>
 	);
 };
 
