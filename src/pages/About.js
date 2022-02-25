@@ -2,6 +2,7 @@ import DiegoIs from "../components/DiegoIs";
 import Education from "../components/Education";
 import Technologies from "../components/Technologies";
 import Courses from "../components/Courses";
+import Contact from "../pages/Contact";
 
 const AboutPage = () => {
 	return (
@@ -15,6 +16,7 @@ const AboutPage = () => {
 				<div className="mt-4 prose lg:prose-xl dark:prose-invert">
 					<Technologies />
 					<Courses />
+					<Contact />
 				</div>
 			</div>
 		</>
