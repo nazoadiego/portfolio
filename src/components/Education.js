@@ -17,12 +17,11 @@ const Education = () => {
 				wanting more and more. I loved that there was so much to learn, I loved
 				the feeling of learning so much so quickly. And before I knew it, I took
 				the decision of becoming a web developer. I wanted to work with other
-				people on delivering the best projects possible, and I wanted to keep
-				learning and growing. That is when I decided to enroll in Le Wagon
-				bootcamp for full stack web development, which was the best learning
-				experience of my life. An intensive course of 8 hours a day, always
-				focused on learning by doing and working with others (pair programming,
-				projects).
+				people, and I wanted to keep learning and growing. That is when I
+				decided to enroll in Le Wagon bootcamp for full stack web development,
+				which was the best learning experience of my life. An intensive course
+				of 8 hours a day, always focused on learning by doing and working with
+				others (pair programming, projects).
 			</p>
 			<p>
 				There I learned Ruby, Ruby On Rails, JavaScript, SQL, semantic HTML5,
