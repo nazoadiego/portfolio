@@ -6,7 +6,7 @@ import CardProject from "../components/CardProject";
 import ProjectDetails from "./ProjectDetails";
 import Filter from "../components/Filter";
 // Objects
-import projects from "./ProjectsObjects";
+import projects from "../components/ProjectsObjects";
 
 const ProjectsPage = () => {
 	const [filtered, setFiltered] = useState(projects);

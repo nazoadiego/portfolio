@@ -1,5 +1,37 @@
 const projects = [
 	{
+		id: "arukeyo",
+		title: "Arukeyo",
+		tags: ["JavaScript", "React", "NextJS"],
+		technologies: [
+			"JavaScript ES6",
+			"React",
+			"NextJS",
+			"TailwindCSS",
+			"GraphQL",
+			"Headless CMS",
+		],
+		image_path: "arukeyo",
+		subtitle: "Personal arukeyo",
+		github: "https://github.com/nazoadiego/blog-arukeyo",
+		visit: "http://arukeyo.vercel.app/",
+		overview: `My personal blog. Made with React, NextJS, GraphQL, and
+    Tailwind CSS. It's connected with GraphCMS API, so you can write
+    articles on Markdown and just publish them to the site.`,
+		difficulties: `I had gained some familiarity with create-react-app,
+    and I came to learn that it wasn't the best for SEO. I knew that it was
+    important that it was important not to just do something on React, but to use
+    the right tool for the task. Also, I wanted to practice fetching the data
+    from an API and GraphQL was far more challenging than I expected. By the very
+    end, I realized that I would need to create a new build every time I would
+    publish an article, which was not ideal.`,
+		solutions: `I leveraged the knowledge that I had from React to jump to
+    NextJS, to generate static pages that would perform better when it came to SEO.
+    I spent a lot of time reading the documentation from GraphCMS to query
+    all the data that I needed. And finally, I integrated GraphCMS with the
+    platform where I deployed the site (Vercel) by using a webhook`,
+	},
+	{
 		id: "kinoko",
 		title: "Kinoko",
 		subtitle: "Pomodoro App",
@@ -34,8 +66,7 @@ const projects = [
       think and talk through it. In the end, it was a mix of both finding more
       simple and better solutions, as well as compromising to deliver a complete
       and fully working product. Even if it didn't have all the features we wanted.
-      For the minimalist designing, sketching it out on Figma was fundamental.
-      `,
+      For the minimalist designing, sketching it out on Figma was fundamental.`,
 	},
 	{
 		id: "bookanartist",
@@ -76,24 +107,6 @@ const projects = [
       keeping the advantages of using an utility first framework.`,
 	},
 	{
-		id: "kinoko-crush",
-		title: "Kinoko Crush",
-		tags: ["JavaScript"],
-		technologies: ["HTML5", "CSS3", "JavaScript ES6"],
-		image_path: "kinoko-crush",
-		subtitle: "Candy Crush Clone",
-		github: "https://github.com/nazoadiego/kinoko-crush-js",
-		visit: "https://nazoadiego.github.io/kinoko-crush-js/",
-		overview: `A Candy Crush clone made in vanilla JavaScript.`,
-		difficulties: `A technical challenge to practice the fundamentals of JavaScript.
-      But more than technical, it was a challenge of my problem solving skills.
-      How did I make the grid? How should program when there is a match? How do
-      I account for invalid moves?`,
-		solutions: `Had to take a step back and think long and hard about how Candy
-      Crush actually works. The patterns under such a deceivingly simple game.
-      Very fun challenge to do.`,
-	},
-	{
 		id: "portfolio",
 		title: "Portfolio",
 		tags: ["JavaScript", "React"],
@@ -107,7 +120,7 @@ const projects = [
       first: first website using Tailwind CSS, first React App, and first page
       where I used 3D animation with Three.js.`,
 		difficulties: `In theory, I understood how routing worked in React. In
-      practice. However, I realized I didn't understood as well as I thought, and
+      practice, however, I realized I didn't understood as well as I thought, and
       that nested rooting required a little more work to function correctly.`,
 		solutions: `Had to do lots of trying and error to understand how React
       really works. Got my hands dirty a few hours investigating (courses, Stack Overflow,
