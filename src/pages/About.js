@@ -15,6 +15,7 @@ const AboutPage = () => {
 				<div className="mt-4 prose lg:prose-xl dark:prose-invert">
 					<Technologies />
 					<Courses />
+				</div>
 			</div>
 		</>
 	);
