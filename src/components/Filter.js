@@ -16,22 +16,27 @@ const Filter = (props) => {
 	}, [activeTag]);
 
 	return (
-		<div className="space-x-2 flex">
+		<div
+			className="flex items-center space-y-2 space-x-2
+    sm:justify-start flex-wrap lg:space-x-2"
+		>
 			<button
 				onClick={() => {
 					setActiveTag("");
 				}}
-				className={activeTag === "" ? "btn-blue" : "btn-white"}
+				className={
+					activeTag === "" ? "btn-blue mt-2 ml-2 lg:ml-0" : "btn-white"
+				}
 			>
 				All
 			</button>
 			<button
 				onClick={() => {
-					setActiveTag("Rails");
+					setActiveTag("React");
 				}}
-				className={activeTag === "Rails" ? "btn-blue" : "btn-white"}
+				className={activeTag === "React" ? "btn-blue" : "btn-white"}
 			>
-				Ruby On Rails
+				React
 			</button>
 			<button
 				onClick={() => {
@@ -43,11 +48,11 @@ const Filter = (props) => {
 			</button>
 			<button
 				onClick={() => {
-					setActiveTag("React");
+					setActiveTag("Rails");
 				}}
-				className={activeTag === "React" ? "btn-blue" : "btn-white"}
+				className={activeTag === "Rails" ? "btn-blue" : "btn-white"}
 			>
-				React
+				Ruby On Rails
 			</button>
 		</div>
 	);
