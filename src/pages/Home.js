@@ -9,7 +9,7 @@ const HomePage = () => {
 		<>
 			<div className="">
 				<div className="animate-appear flex flex-col lg:flex-row">
-					<Canvas clasName="canvas">
+					<Canvas className="canvas">
 						<OrbitControls enableZoom={false} />
 						<ambientLight intensity={0.5} />
 						<directionalLight position={[-2, 5, 2]} />

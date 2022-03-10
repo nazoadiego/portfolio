@@ -58,7 +58,7 @@ const ProjectDetails = (props) => {
 					className="mt-4 animate-appear2 shadow-lg rounded-lg xl:rounded-lg aspect-2"
 				/>
 				<div className="prose lg:prose-xl dark:prose-invert mt-8">
-					<h3>Tecnologies</h3>
+					<h3>Technologies</h3>
 					<ul className="ml-2 grid grid-cols-2">{technologiesList}</ul>
 				</div>
 			</div>
