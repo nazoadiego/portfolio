@@ -25,7 +25,9 @@ const Filter = (props) => {
 					setActiveTag("");
 				}}
 				className={
-					activeTag === "" ? "btn-blue mt-2 ml-2 lg:ml-0" : "btn-white"
+					activeTag === ""
+						? "btn-blue mt-2 ml-2 lg:ml-0"
+						: "btn-white mt-2 ml-2 lg:ml-0"
 				}
 			>
 				All
