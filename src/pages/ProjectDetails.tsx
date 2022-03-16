@@ -1,9 +1,27 @@
 import { useParams } from "react-router-dom";
+import { FC } from "react";
 
-const ProjectDetails = (props) => {
+interface DetailsProps {
+	projects: {
+		id: string;
+		title: string;
+		subtitle: string;
+		image_path: string;
+		technologies: string[];
+		github: string;
+		visit: string;
+		overview: string;
+		difficulties: string;
+		solutions: string;
+	}[];
+}
+
+const ProjectDetails: FC<DetailsProps> = (props) => {
 	const projects = props.projects;
 	const { projectId } = useParams();
+
 	const project = projects.find(({ id }) => id === projectId);
+
 	const {
 		title,
 		subtitle,
@@ -15,6 +33,7 @@ const ProjectDetails = (props) => {
 		difficulties,
 		solutions,
 	} = project;
+
 	const technologiesList = technologies.map((technology) => {
 		return <li key={technology}>{technology}</li>;
 	});

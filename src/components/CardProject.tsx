@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
+import { FC } from "react";
 
-const CardProject = (props) => {
+interface CardProps {
+	title: string;
+	subtitle: string;
+	image_path: string;
+}
+
+const CardProject: FC<CardProps> = (props) => {
 	const { title, subtitle, image_path } = props;
 
 	return (

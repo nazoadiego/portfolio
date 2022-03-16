@@ -5,14 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import CardProject from "../components/CardProject";
 import ProjectDetails from "./ProjectDetails";
 import Filter from "../components/Filter";
-// Objects
-import projects from "../components/ProjectsObjects";
+// Content
+import projects from "../content/ProjectsInfo";
+import { FC } from "react";
 
-const ProjectsPage = () => {
+const ProjectsPage: FC = () => {
 	const [filtered, setFiltered] = useState(projects);
 	const [activeTag, setActiveTag] = useState("");
 
-	let { path, url } = useRouteMatch();
+	let { path, url }: { path: string; url: string } = useRouteMatch();
 
 	return (
 		<>

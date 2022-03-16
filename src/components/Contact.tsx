@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FC } from "react";
 
-const Contact = () => {
+const Contact: FC = () => {
 	const form = useRef();
 	const [result, setResult] = useState(false);
 

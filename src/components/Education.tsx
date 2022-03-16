@@ -1,4 +1,6 @@
-const Education = () => {
+import { FC } from "react";
+
+const Education: FC = () => {
 	return (
 		<>
 			<h2 className="underline">Education</h2>

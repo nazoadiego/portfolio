@@ -1,25 +1,7 @@
-const Technologies = () => {
-	const technologies = [
-		"Ruby",
-		"Ruby On Rails",
-		"JavaScript ES6",
-		"React",
-		"Redux",
-		"TypeScript",
-		"HTML5",
-		"CSS3",
-		"Sass",
-		"TailwindCSS",
-		"Bootstrap",
-		"SQL",
-		"Webpack",
-		"Parcel",
-		"Git",
-		"GitHub",
-		"Heroku",
-		"Figma",
-	];
+import { FC } from "react";
+import technologies from "../content/TechnologiesInfo";
 
+const Technologies: FC = () => {
 	return (
 		<>
 			<h2 className="underline lg:ml-8">Technologies</h2>

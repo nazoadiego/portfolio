@@ -13,7 +13,7 @@ const Filter = (props) => {
 			project.tags.includes(activeTag)
 		);
 		setFiltered(filtered);
-	}, [activeTag]);
+	}, [activeTag, projects, setFiltered]);
 
 	return (
 		<div

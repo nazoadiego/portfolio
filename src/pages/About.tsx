@@ -2,8 +2,9 @@ import DiegoIs from "../components/DiegoIs";
 import Education from "../components/Education";
 import Technologies from "../components/Technologies";
 import Courses from "../components/Courses";
+import { FC } from "react";
 
-const AboutPage = () => {
+const AboutPage: FC = () => {
 	return (
 		<>
 			<DiegoIs />
