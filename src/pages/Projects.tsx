@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,7 +8,6 @@ import ProjectDetails from "./ProjectDetails";
 import Filter from "../components/Filter";
 // Content
 import projects from "../content/ProjectsInfo";
-import { FC } from "react";
 
 const ProjectsPage: FC = () => {
 	const [filtered, setFiltered] = useState(projects);
