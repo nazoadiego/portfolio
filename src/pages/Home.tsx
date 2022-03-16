@@ -3,8 +3,9 @@ import Kinoko from "../components/Kinoko";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { FC } from "react";
 
-const HomePage = () => {
+const HomePage: FC = () => {
 	return (
 		<>
 			<div className="">

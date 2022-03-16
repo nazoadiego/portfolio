@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
+import { FC } from "react";
 
-const NavItems = () => {
+const Nav: FC = () => {
 	const [darkMode, setDarkMode] = useState(true);
 
 	const toggleTheme = () => {
@@ -12,7 +13,7 @@ const NavItems = () => {
 	};
 
 	return (
-		<>
+		<nav>
 			<Link to="/">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					Home
@@ -36,8 +37,8 @@ const NavItems = () => {
 					{darkMode && <FaSun />}
 				</h2>
 			</button>
-		</>
+		</nav>
 	);
 };
 
-export default NavItems;
+export default Nav;

@@ -16,7 +16,7 @@
 	}
 
 	h3 {
-		@apply text-2xl font-semibold;
+		@apply text-3xl font-semibold;
 	}
 
 	h4 {
@@ -48,8 +48,8 @@
 		@apply m-1 flex items-center justify-center rounded-lg shadow-lg;
 	}
 
-	.about-card h2 {
-		@apply text-gray-200 text-3xl lg:text-4xl;
+	.about-card h3 {
+		@apply text-gray-200 text-2xl lg:text-3xl;
 	}
 
 	.btn {
