@@ -48,10 +48,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 
@@ -106,7 +104,8 @@ Don't forget to give the project a star! Thanks again!
 
 Special thanks to the following resources for making this much easier:
 
-- [GraphCMS](https://graphcms.com/)
+- ThreeJS
+- FramerMotion
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
