@@ -1,6 +1,44 @@
 import { useEffect } from "react";
+import { FC } from "react";
 
-const Filter = (props) => {
+interface Project {
+	id: string;
+	title: string;
+	tags: string[];
+	technologies: string[];
+	image_path: string;
+	subtitle: string;
+	github: string;
+	visit: string;
+	overview: string;
+	difficulties: string;
+	solutions: string;
+}
+
+interface FilterProps {
+	projects: Project[];
+	activeTag: string;
+	setFiltered: React.Dispatch<
+		React.SetStateAction<
+			{
+				id: string;
+				title: string;
+				tags: string[];
+				technologies: string[];
+				image_path: string;
+				subtitle: string;
+				github: string;
+				visit: string;
+				overview: string;
+				difficulties: string;
+				solutions: string;
+			}[]
+		>
+	>;
+	setActiveTag: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Filter: FC<FilterProps> = (props) => {
 	const { projects, activeTag, setFiltered, setActiveTag } = props;
 
 	useEffect(() => {
@@ -9,7 +47,7 @@ const Filter = (props) => {
 			return;
 		}
 
-		const filtered = projects.filter((project) =>
+		const filtered: Project[] = projects.filter((project) =>
 			project.tags.includes(activeTag)
 		);
 		setFiltered(filtered);
