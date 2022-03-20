@@ -3,7 +3,7 @@ const technologies = [
 	"Ruby On Rails",
 	"JavaScript ES6",
 	"React",
-	"Redux",
+	"NextJS",
 	"TypeScript",
 	"HTML5",
 	"CSS3",

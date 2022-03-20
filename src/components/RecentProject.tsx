@@ -2,18 +2,7 @@ import projects from "../content/ProjectsInfo";
 import { FC } from "react";
 
 const RecentProject: FC = () => {
-	const latestProject: {
-		id: string;
-		title: string;
-		subtitle: string;
-		image_path: string;
-		technologies: string[];
-		github: string;
-		visit: string;
-		overview: string;
-		difficulties: string;
-		solutions: string;
-	} = projects[0];
+	const latestProject = projects[0];
 
 	return (
 		<section className="grid animate-appear3 grid-cols-1 gap-0 rounded-lg bg-black shadow-lg xl:grid-cols-2">

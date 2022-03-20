@@ -106,7 +106,7 @@ const projects: {
       and my first real project. There was definitely a learning curve when it came
       to using Rails, doing version control, and deployment on Heroku. Later on,
       after the bootcamp I decided to change Bootstrap to Tailwind which, of course,
-      breaks everything`,
+      breaks everything.`,
 		solutions: `A solution I came up with that helped was creating a
       kanban todo list. It helped a lot when I had to delegate work and to keep
       track of our progress and the most important features. And for version control

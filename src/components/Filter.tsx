@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { FC } from "react";
 
-interface Project {
+type Project = {
 	id: string;
 	title: string;
 	tags: string[];
@@ -13,7 +13,7 @@ interface Project {
 	overview: string;
 	difficulties: string;
 	solutions: string;
-}
+};
 
 interface FilterProps {
 	projects: Project[];
