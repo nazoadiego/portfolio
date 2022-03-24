@@ -1,13 +1,15 @@
 import projects from "../content/ProjectsInfo";
 import { FC } from "react";
+import ImageWithFallback from "./ImageWithFallback";
 
 const RecentProject: FC = () => {
 	const latestProject = projects[0];
 
 	return (
 		<section className="grid animate-appear3 grid-cols-1 gap-0 rounded-lg bg-black shadow-lg xl:grid-cols-2">
-			<img
-				src={require(`../images/${latestProject.image_path}.jpg`)}
+			<ImageWithFallback
+				src={require(`../images/${latestProject.image_path}.webp`)}
+				fallback={require(`../images/${latestProject.image_path}.jpg`)}
 				alt={`${latestProject.title}. ${latestProject.subtitle}`}
 				className="h-full w-full animate-appear3 rounded-t-lg xl:rounded-l-lg xl:rounded-r-none"
 			/>

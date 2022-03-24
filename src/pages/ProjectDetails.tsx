@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { FC } from "react";
+import ImageWithFallback from "../components/ImageWithFallback";
 
 interface DetailsProps {
 	projects: {
@@ -71,10 +72,12 @@ const ProjectDetails: FC<DetailsProps> = (props) => {
 				</div>
 			</div>
 			<div>
-				<img
-					src={require("../images/" + image_path + ".jpg")}
+				<ImageWithFallback
+					src={require("../images/" + image_path + ".webp")}
+					fallback={require("../images/" + image_path + ".jpg")}
 					alt={title + ". " + subtitle}
-					className="mt-4 animate-appear2 shadow-lg rounded-lg xl:rounded-lg aspect-2"
+					className="mt-4 animate-appear2 shadow-lg rounded-lg xl:rounded-lg
+				aspect-2"
 				/>
 				<div className="prose lg:prose-xl dark:prose-invert mt-8">
 					<h3>Technologies</h3>
