@@ -1,4 +1,4 @@
-const courses: string[] = [
+const courses = [
 	"Full Stack Web Development by Le Wagon",
 	"Complete Intro to Web Development by Brian Holt",
 	"Getting Started with CSS by Jen Kramer",

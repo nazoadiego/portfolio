@@ -1,16 +1,6 @@
-const projects: {
-	id: string;
-	title: string;
-	tags: string[];
-	technologies: string[];
-	image_path: string;
-	subtitle: string;
-	github: string;
-	visit: string;
-	overview: string;
-	difficulties: string;
-	solutions: string;
-}[] = [
+import type { Project } from "../types/index";
+
+const projects: Project[] = [
 	{
 		id: "arukeyo",
 		title: "Arukeyo",

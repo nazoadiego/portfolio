@@ -1,40 +1,11 @@
 import { useEffect } from "react";
 import { FC } from "react";
-
-type Project = {
-	id: string;
-	title: string;
-	tags: string[];
-	technologies: string[];
-	image_path: string;
-	subtitle: string;
-	github: string;
-	visit: string;
-	overview: string;
-	difficulties: string;
-	solutions: string;
-};
+import type { Project } from "../types/index";
 
 interface FilterProps {
 	projects: Project[];
 	activeTag: string;
-	setFiltered: React.Dispatch<
-		React.SetStateAction<
-			{
-				id: string;
-				title: string;
-				tags: string[];
-				technologies: string[];
-				image_path: string;
-				subtitle: string;
-				github: string;
-				visit: string;
-				overview: string;
-				difficulties: string;
-				solutions: string;
-			}[]
-		>
-	>;
+	setFiltered: React.Dispatch<React.SetStateAction<Project[]>>;
 	setActiveTag: React.Dispatch<React.SetStateAction<string>>;
 }
 
