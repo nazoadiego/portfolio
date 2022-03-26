@@ -26,7 +26,7 @@ const projects: {
 		image_path: "arukeyo",
 		subtitle: "Personal arukeyo",
 		github: "https://github.com/nazoadiego/blog-arukeyo",
-		visit: "http://arukeyo.vercel.app/",
+		visit: "https://www.arukeyo.com/",
 		overview: `My personal blog. Made with React, NextJS, GraphQL, and
     Tailwind CSS. It's connected with GraphCMS API, so you can write
     articles on Markdown and just publish them to the site.`,
@@ -132,7 +132,7 @@ const projects: {
 		image_path: "portfolio",
 		subtitle: "Personal Portfolio",
 		github: "https://github.com/nazoadiego/portfolio",
-		visit: "https://nazoadiego.github.io/portfolio/",
+		visit: "https://www.nazoaportfolio.com/",
 		overview: `The place where I display my work. Originally it was a Ruby on
       Rails app, but I decided to redo it as a single page application. Lots of
       first: first website using Tailwind CSS, first React App, and first page
