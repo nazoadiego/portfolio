@@ -46,7 +46,7 @@ const ProjectsPage: FC = () => {
 					</motion.div>
 				</Route>
 				<Route path={`${path}/:projectId`}>
-					<ProjectDetails projects={projects} />
+					<ProjectDetails />
 				</Route>
 			</Switch>
 		</>

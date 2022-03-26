@@ -1,27 +1,11 @@
 import { useParams } from "react-router-dom";
 import { FC } from "react";
 import ImageWithFallback from "../components/ImageWithFallback";
+import projects from "../content/ProjectsInfo";
 
-interface DetailsProps {
-	projects: {
-		id: string;
-		title: string;
-		subtitle: string;
-		image_path: string;
-		technologies: string[];
-		github: string;
-		visit: string;
-		overview: string;
-		difficulties: string;
-		solutions: string;
-	}[];
-}
-
-const ProjectDetails: FC<DetailsProps> = (props) => {
-	const projects = props.projects;
+const ProjectDetails: FC = () => {
 	const { projectId } = useParams();
-
-	const project = projects.find(({ id }) => id === projectId);
+	const project = projects.find((project) => project.id === projectId);
 
 	const {
 		title,
