@@ -2,6 +2,7 @@ import "./stylesheets/App.css";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import ProjectsPage from "./pages/Projects";
+import NotFound from "./pages/NotFound";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -23,6 +24,9 @@ function App() {
 						</Route>
 						<Route path="/projects">
 							<ProjectsPage />
+						</Route>
+						<Route path="*">
+							<NotFound />
 						</Route>
 					</Switch>
 				</main>
