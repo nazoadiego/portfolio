@@ -22,13 +22,13 @@ const projects: Project[] = [
     articles on Markdown and just publish them to the site.`,
 		difficulties: `I had gained some familiarity with create-react-app,
     and I came to learn that it wasn't the best for SEO. I knew that it was
-    important that it was important not to just do something on React, but to use
+    important that not to just do something on React, but to use
     the right tool for the task. Also, I wanted to practice fetching the data
-    from an API and GraphQL was far more challenging than I expected. By the very
-    end, I realized that I would need to create a new build every time I would
-    publish an article, which was not ideal.`,
+    from an API and GraphQL was far more challenging than I expected. I came to
+    understand what Static Site Generation meant when I realized that I would
+    need to create a new build every time I would publish an article.`,
 		solutions: `I leveraged the knowledge that I had from React to jump to
-    NextJS, to generate static pages that would perform better when it came to SEO.
+    NextJS, and created static pages that would perform better when it came to SEO.
     I spent a lot of time reading the documentation from GraphCMS to query
     all the data that I needed. And finally, I integrated GraphCMS with the
     platform where I deployed the site (Vercel) by using a webhook`,
