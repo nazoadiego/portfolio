@@ -1,0 +1,148 @@
+2022-04-05T13:56:48.791Z cypress:cli:cli cli starts with arguments ["/home/linuxnazoa/.nvm/versions/node/v14.17.0/bin/node","/home/linuxnazoa/code/nazoadiego/projects/portfolio-react/node_modules/.bin/cypress","open","-b","/usr/local/bin/chromium"]
+2022-04-05T13:56:48.792Z cypress:cli NODE_OPTIONS is not set
+2022-04-05T13:56:48.792Z cypress:cli:cli program parsing arguments
+2022-04-05T13:56:48.793Z cypress:cli:cli opening Cypress
+2022-04-05T13:56:48.907Z cypress:cli parsed cli options { browser: '/usr/local/bin/chromium' }
+2022-04-05T13:56:48.907Z cypress:cli opening from options {"browser":"/usr/local/bin/chromium","project":"/home/linuxnazoa/code/nazoadiego/projects/portfolio-react"}
+2022-04-05T13:56:48.907Z cypress:cli command line arguments ["--browser","/usr/local/bin/chromium","--project","/home/linuxnazoa/code/nazoadiego/projects/portfolio-react"]
+2022-04-05T13:56:48.907Z cypress:cli verifying Cypress app
+2022-04-05T13:56:48.908Z cypress:cli checking environment variables
+2022-04-05T13:56:48.911Z cypress:cli checking if executable exists /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress
+2022-04-05T13:56:48.913Z cypress:cli Binary is executable? : true
+2022-04-05T13:56:48.914Z cypress:cli binaryDir is  /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress
+2022-04-05T13:56:48.914Z cypress:cli Reading binary package.json from: /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/resources/app/package.json
+2022-04-05T13:56:48.919Z cypress:cli Found binary version 9.5.3 installed in: /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress
+2022-04-05T13:56:48.921Z cypress:cli could not read binary_state.json file at "/home/linuxnazoa/.cache/Cypress/9.5.3/binary_state.json"
+2022-04-05T13:56:48.921Z cypress:cli {}
+2022-04-05T13:56:48.921Z cypress:cli is Verified ? undefined
+2022-04-05T13:56:48.921Z cypress:cli running binary verification check 9.5.3
+It looks like this is your first time using Cypress: 9.5.3
+
+[STARTED] Task without title.
+2022-04-05T13:56:48.926Z cypress:cli clearing out the verified version
+2022-04-05T13:56:48.927Z cypress:cli DISPLAY environment variable is set to 172.24.96.1:0 on Linux
+Assuming this DISPLAY points at working X11 server,
+Cypress will not spawn own Xvfb
+
+NOTE: if the X11 server is NOT working, Cypress will exit without explanation,
+  see https://github.com/cypress-io/cypress/issues/4034
+Solution: Unset the DISPLAY variable and try again:
+  DISPLAY= npx cypress run ...
+2022-04-05T13:56:48.927Z cypress:cli needs Xvfb? false
+2022-04-05T13:56:48.927Z cypress:cli spawning, should retry on display problem? true
+2022-04-05T13:56:48.927Z cypress:cli disabling Electron sandbox
+2022-04-05T13:56:48.927Z cypress:cli running smoke test
+2022-04-05T13:56:48.927Z cypress:cli using Cypress executable /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress
+2022-04-05T13:56:48.927Z cypress:cli smoke test command: /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress --no-sandbox --smoke-test --ping=704
+2022-04-05T13:56:48.928Z cypress:cli smoke test timeout 30000 ms
+2022-04-05T13:57:18.963Z cypress:cli Smoke test failed: Error: Command timed out after 30000 milliseconds: /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress --no-sandbox --smoke-test --ping=704
+Timed out
+2022-04-05T13:56:49.100Z cypress:ts register TypeScript project /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+2022-04-05T13:56:49.303Z cypress:ts Running without ts-node hook in environment "production"
+2022-04-05T13:56:49.625Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/browsers
+2022-04-05T13:56:50.264Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production
+2022-04-05T13:56:50.440Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/cache
+2022-04-05T13:56:50.752Z cypress:server:cypress starting cypress with argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+2022-04-05T13:56:50.753Z cypress:server:args argv array: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+2022-04-05T13:56:50.755Z cypress:server:args parsed argv options { options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, 'smoke-test': true, smokeTest: true, ping: 704 } }
+2022-04-05T13:56:50.758Z cypress:server:args argv parsed: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e' }
+2022-04-05T13:56:50.759Z cypress:server:util:proxy found proxy environment variables { npm_config_noproxy: '' }
+2022-04-05T13:56:50.760Z cypress:server:args options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {} }
+2022-04-05T13:56:50.760Z cypress:server:args argv options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+2022-04-05T13:56:50.761Z cypress:server:cypress from argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ] got options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+    at timeoutKill (/home/linuxnazoa/code/nazoadiego/projects/portfolio-react/node_modules/execa/lib/kill.js:65:23)
+    at Timeout._onTimeout (/home/linuxnazoa/code/nazoadiego/projects/portfolio-react/node_modules/execa/lib/kill.js:81:4)
+    at listOnTimeout (internal/timers.js:555:17)
+    at processTimers (internal/timers.js:498:7) {
+  timedOut: true,
+  signal: 'SIGTERM',
+  originalMessage: 'Timed out',
+  shortMessage: 'Command timed out after 30000 milliseconds: /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress --no-sandbox --smoke-test --ping=704\n' +
+    'Timed out',
+  command: '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress --no-sandbox --smoke-test --ping=704',
+  exitCode: undefined,
+  signalDescription: 'Termination',
+  stdout: '',
+  stderr: '2022-04-05T13:56:49.100Z cypress:ts register TypeScript project /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/resources/app/packages/ts/tsconfig.json fast? true\n' +
+    '2022-04-05T13:56:49.303Z cypress:ts Running without ts-node hook in environment "production"\n' +
+    '2022-04-05T13:56:49.625Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/browsers\n' +
+    '2022-04-05T13:56:50.264Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production\n' +
+    '2022-04-05T13:56:50.440Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/cache\n' +
+    "2022-04-05T13:56:50.752Z cypress:server:cypress starting cypress with argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]\n" +
+    "2022-04-05T13:56:50.753Z cypress:server:args argv array: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]\n" +
+    "2022-04-05T13:56:50.755Z cypress:server:args parsed argv options { options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, 'smoke-test': true, smokeTest: true, ping: 704 } }\n" +
+    "2022-04-05T13:56:50.758Z cypress:server:args argv parsed: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e' }\n" +
+    "2022-04-05T13:56:50.759Z cypress:server:util:proxy found proxy environment variables { npm_config_noproxy: '' }\n" +
+    "2022-04-05T13:56:50.760Z cypress:server:args options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {} }\n" +
+    "2022-04-05T13:56:50.760Z cypress:server:args argv options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }\n" +
+    "2022-04-05T13:56:50.761Z cypress:server:cypress from argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ] got options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }",
+  failed: true,
+  isCanceled: false,
+  killed: false
+}
+2022-04-05T13:57:18.966Z cypress:cli error message: 2022-04-05T13:56:49.100Z cypress:ts register TypeScript project /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+2022-04-05T13:56:49.303Z cypress:ts Running without ts-node hook in environment "production"
+2022-04-05T13:56:49.625Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/browsers
+2022-04-05T13:56:50.264Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production
+2022-04-05T13:56:50.440Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/cache
+2022-04-05T13:56:50.752Z cypress:server:cypress starting cypress with argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+2022-04-05T13:56:50.753Z cypress:server:args argv array: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+2022-04-05T13:56:50.755Z cypress:server:args parsed argv options { options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, 'smoke-test': true, smokeTest: true, ping: 704 } }
+2022-04-05T13:56:50.758Z cypress:server:args argv parsed: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e' }
+2022-04-05T13:56:50.759Z cypress:server:util:proxy found proxy environment variables { npm_config_noproxy: '' }
+2022-04-05T13:56:50.760Z cypress:server:args options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {} }
+2022-04-05T13:56:50.760Z cypress:server:args argv options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+2022-04-05T13:56:50.761Z cypress:server:cypress from argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ] got options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+2022-04-05T13:57:18.966Z cypress:cli error timedOut is true
+[FAILED] Cypress verification timed out.
+[FAILED] 
+[FAILED] This command failed with the following output:
+[FAILED] 
+[FAILED] /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress --no-sandbox --smoke-test --ping=704
+[FAILED] 
+[FAILED] ----------
+[FAILED] 
+[FAILED] 2022-04-05T13:56:49.100Z cypress:ts register TypeScript project /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+[FAILED] 2022-04-05T13:56:49.303Z cypress:ts Running without ts-node hook in environment "production"
+[FAILED] 2022-04-05T13:56:49.625Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/browsers
+[FAILED] 2022-04-05T13:56:50.264Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production
+[FAILED] 2022-04-05T13:56:50.440Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/cache
+[FAILED] 2022-04-05T13:56:50.752Z cypress:server:cypress starting cypress with argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+[FAILED] 2022-04-05T13:56:50.753Z cypress:server:args argv array: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+[FAILED] 2022-04-05T13:56:50.755Z cypress:server:args parsed argv options { options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, 'smoke-test': true, smokeTest: true, ping: 704 } }
+[FAILED] 2022-04-05T13:56:50.758Z cypress:server:args argv parsed: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e' }
+[FAILED] 2022-04-05T13:56:50.759Z cypress:server:util:proxy found proxy environment variables { npm_config_noproxy: '' }
+[FAILED] 2022-04-05T13:56:50.760Z cypress:server:args options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {} }
+[FAILED] 2022-04-05T13:56:50.760Z cypress:server:args argv options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+[FAILED] 2022-04-05T13:56:50.761Z cypress:server:cypress from argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ] got options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+[FAILED] 
+[FAILED] ----------
+[FAILED] 
+[FAILED] Platform: linux-x64 (Ubuntu - 20.04)
+[FAILED] Cypress Version: 9.5.3
+Cypress verification timed out.
+
+This command failed with the following output:
+
+/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress --no-sandbox --smoke-test --ping=704
+
+----------
+
+2022-04-05T13:56:49.100Z cypress:ts register TypeScript project /home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+2022-04-05T13:56:49.303Z cypress:ts Running without ts-node hook in environment "production"
+2022-04-05T13:56:49.625Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/browsers
+2022-04-05T13:56:50.264Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production
+2022-04-05T13:56:50.440Z cypress:server:appdata path: /home/linuxnazoa/.config/Cypress/cy/production/cache
+2022-04-05T13:56:50.752Z cypress:server:cypress starting cypress with argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+2022-04-05T13:56:50.753Z cypress:server:args argv array: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ]
+2022-04-05T13:56:50.755Z cypress:server:args parsed argv options { options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, 'smoke-test': true, smokeTest: true, ping: 704 } }
+2022-04-05T13:56:50.758Z cypress:server:args argv parsed: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e' }
+2022-04-05T13:56:50.759Z cypress:server:util:proxy found proxy environment variables { npm_config_noproxy: '' }
+2022-04-05T13:56:50.760Z cypress:server:args options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {} }
+2022-04-05T13:56:50.760Z cypress:server:args argv options: { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+2022-04-05T13:56:50.761Z cypress:server:cypress from argv [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress', '--no-sandbox', '--smoke-test', '--ping=704' ] got options { _: [ '/home/linuxnazoa/.cache/Cypress/9.5.3/Cypress/Cypress' ], sandbox: false, smokeTest: true, ping: 704, invokedFromCli: false, cwd: '/home/linuxnazoa/code/nazoadiego/projects/portfolio-react', testingType: 'e2e', config: {}, pong: 704 }
+
+----------
+
+Platform: linux-x64 (Ubuntu - 20.04)
+Cypress Version: 9.5.3

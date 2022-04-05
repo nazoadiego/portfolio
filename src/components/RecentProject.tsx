@@ -6,7 +6,10 @@ const RecentProject: FC = () => {
 	const latestProject = projects[0];
 
 	return (
-		<section className="grid animate-appear3 grid-cols-1 gap-0 rounded-lg bg-black shadow-lg xl:grid-cols-2">
+		<section
+			className="grid animate-appear3 grid-cols-1 gap-0 rounded-lg bg-black shadow-lg xl:grid-cols-2"
+			data-cypress="recent-project"
+		>
 			<ImageWithFallback
 				src={require(`../images/${latestProject.image_path}.webp`)}
 				fallback={require(`../images/${latestProject.image_path}.jpg`)}

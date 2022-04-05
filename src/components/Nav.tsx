@@ -14,19 +14,19 @@ const Nav: FC = () => {
 
 	return (
 		<nav>
-			<Link to="/">
+			<Link data-cy="nav-link" to="/">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					Home
 				</h2>
 			</Link>
 
-			<Link to="/about">
+			<Link data-cy="nav-link" to="/about">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					About
 				</h2>
 			</Link>
 
-			<Link to="/projects">
+			<Link data-cy="nav-link" to="/prj">
 				<h2 className="nav-item hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 					Projects
 				</h2>
