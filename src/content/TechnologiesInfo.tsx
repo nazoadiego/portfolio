@@ -17,6 +17,7 @@ const technologies = [
 	"GitHub",
 	"Heroku",
 	"Figma",
+	"Framer Motion",
 ];
 
 export default technologies;

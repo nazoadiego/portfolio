@@ -3,11 +3,11 @@ import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // Components
-import CardProject from "../components/CardProject";
+import CardProject from "../components/projects/CardProject";
 import ProjectDetails from "./ProjectDetails";
-import Filter from "../components/Filter";
 // Content
 import projects from "../content/ProjectsInfo";
+import Filter from "../components/projects/Filter";
 
 const ProjectsPage: FC = () => {
 	const [filtered, setFiltered] = useState(projects);

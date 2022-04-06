@@ -1,6 +1,10 @@
 @tailwind base;
 
 @layer base {
+	html {
+		@apply scroll-smooth;
+	}
+
 	body {
 		@apply font-sans font-normal leading-relaxed text-gray-800 dark:text-gray-200;
 	}
@@ -35,8 +39,8 @@
 		@apply text-base font-semibold;
 	}
 
-	a {
-		@apply text-flowerblue-600;
+	p {
+		@apply text-lg;
 	}
 }
 
@@ -45,6 +49,7 @@
 @layer components {
 	.about-card {
 		height: 60px;
+		min-width: 4rem;
 		@apply m-1 flex items-center justify-center rounded-lg shadow-lg;
 	}
 
@@ -69,16 +74,36 @@
 	.btn-blue {
 		@apply btn
    text-flowerblue-50
-   bg-flowerblue-900 hover:bg-flowerblue-800
-   border-flowerblue-900 border-solid border-2;
+   bg-flowerblue-700 hover:bg-flowerblue-600
+   border-flowerblue-700 border-solid border-2;
 	}
 
-	.navbar-mobile {
-		@apply z-50 flex h-auto w-full justify-center bg-black py-2 lg:hidden;
+	.custom-input {
+		@apply w-full rounded-lg outline-none focus:ring-2;
 	}
-	.navbar-desktop {
-		@apply hidden bg-black h-screen sticky text-center top-0 lg:flex lg:w-1/6 lg:flex-col lg:justify-center;
+	.dark-input {
+		@apply custom-input bg-moon-400 text-gray-700 focus:ring-moon-700;
+	}
+	.day-input {
+		@apply custom-input bg-flowerblue-50  focus:ring-flowerblue-600;
 	}
 }
 
 @tailwind utilities;
+
+@layer utilities {
+	.link-underline {
+		border-bottom-width: 0;
+		background-image: linear-gradient(transparent, transparent),
+			linear-gradient(#4655e5, #4655e5);
+		background-size: 0 3px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size 0.3s ease-in-out;
+	}
+
+	.link-underline:hover {
+		background-size: 100% 3px;
+		background-position: 0 100%;
+	}
+}

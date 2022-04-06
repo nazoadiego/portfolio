@@ -9,6 +9,8 @@ module.exports = {
 				sans: ["Inter var", ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
+				"moon-700": "#171A23",
+				"moon-400": "#363B49",
 				"flowerblue-50": "#eef0ff",
 				"flowerblue-100": "#e0e3ff",
 				"flowerblue-200": "#c7ccfe",

@@ -13,11 +13,11 @@ const CardProject: FC<CardProps> = (props) => {
 	return (
 		<picture>
 			<source
-				srcSet={require("../images/" + image_path + ".webp")}
+				srcSet={require("../../images/" + image_path + ".webp")}
 				type="image/webp"
 			/>
 			<motion.img
-				src={require("../images/" + image_path + ".jpg")}
+				src={require("../../images/" + image_path + ".jpg")}
 				alt={title + ". " + subtitle}
 				layout
 				animate={{ opacity: 1 }}

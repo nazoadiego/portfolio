@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { FC } from "react";
-import type { Project } from "../types/index";
+import type { Project } from "../../types/index";
 
 interface FilterProps {
 	projects: Project[];
