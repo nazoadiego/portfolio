@@ -39,7 +39,7 @@ const HomePage: FC = () => {
 					<p>Hello, I'm a web developer based in Spain!</p>
 				</div>
 			</div>
-			<article className="prose-xl dark:prose-invert">
+			<article>
 				<h3>Work</h3>
 				<p>
 					Client focused web developer who is very passionate about programming,
