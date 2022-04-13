@@ -60,7 +60,7 @@
 	.btn {
 		transition: ease 0.3s;
 		@apply flex items-center justify-center
-    rounded-lg shadow-lg
+    rounded-lg shadow-lg font-semibold
     py-2 px-4;
 	}
 
