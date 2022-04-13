@@ -17,7 +17,7 @@ const HomePage: FC = () => {
 					<ambientLight intensity={0.5} />
 					<directionalLight position={[-2, 5, 2]} />
 					<Suspense fallback={null}>
-						<Kinoko></Kinoko>
+						<Kinoko />
 					</Suspense>
 				</Canvas>
 				<div className="flex flex-col lg:mr-16 lg:text-right">
@@ -39,7 +39,7 @@ const HomePage: FC = () => {
 					<p>Hello, I'm a web developer based in Spain!</p>
 				</div>
 			</div>
-			<article>
+			<article className="space-y-4">
 				<h3>Work</h3>
 				<p>
 					Client focused web developer who is very passionate about programming,
@@ -48,13 +48,13 @@ const HomePage: FC = () => {
 					Rails enthusiast!
 				</p>
 			</article>
-			<article>
+			<article className="space-y-4">
 				<h3>My Links</h3>
 				<div className="flex flex-wrap">
 					<ContactIcons />
 				</div>
 			</article>
-			<article>
+			<article className="space-y-8">
 				<h3>My Skills</h3>
 				<p>
 					I have a strong background in web development and I'm always looking
