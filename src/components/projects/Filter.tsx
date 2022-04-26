@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { FC } from "react";
-import type { Project } from "../types/index";
+import type { Project } from "../../types/index";
 
 interface FilterProps {
 	projects: Project[];
@@ -29,7 +30,9 @@ const Filter: FC<FilterProps> = (props) => {
 			className="flex items-center space-y-2 space-x-2
     sm:justify-start flex-wrap lg:space-x-2"
 		>
-			<button
+			<motion.button
+				whileHover={{ rotate: [0, -40, 5] }}
+				transition={{ duration: 0.2 }}
 				onClick={() => {
 					setActiveTag("");
 				}}
@@ -40,31 +43,37 @@ const Filter: FC<FilterProps> = (props) => {
 				}
 			>
 				All
-			</button>
-			<button
+			</motion.button>
+			<motion.button
+				whileHover={{ rotate: [0, -40, 5] }}
+				transition={{ duration: 0.2 }}
 				onClick={() => {
 					setActiveTag("React");
 				}}
 				className={activeTag === "React" ? "btn-blue" : "btn-white"}
 			>
 				React
-			</button>
-			<button
+			</motion.button>
+			<motion.button
+				whileHover={{ rotate: [0, -40, 5] }}
+				transition={{ duration: 0.2 }}
 				onClick={() => {
 					setActiveTag("JavaScript");
 				}}
 				className={activeTag === "JavaScript" ? "btn-blue" : "btn-white"}
 			>
 				JavaScript
-			</button>
-			<button
+			</motion.button>
+			<motion.button
+				whileHover={{ rotate: [0, -40, 5] }}
+				transition={{ duration: 0.2 }}
 				onClick={() => {
 					setActiveTag("Rails");
 				}}
 				className={activeTag === "Rails" ? "btn-blue" : "btn-white"}
 			>
 				Ruby On Rails
-			</button>
+			</motion.button>
 		</div>
 	);
 };

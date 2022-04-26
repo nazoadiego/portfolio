@@ -3,11 +3,11 @@ import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // Components
-import CardProject from "../components/CardProject";
+import CardProject from "../components/projects/CardProject";
 import ProjectDetails from "./ProjectDetails";
-import Filter from "../components/Filter";
 // Content
 import projects from "../content/ProjectsInfo";
+import Filter from "../components/projects/Filter";
 
 const ProjectsPage: FC = () => {
 	const [filtered, setFiltered] = useState(projects);
@@ -19,30 +19,37 @@ const ProjectsPage: FC = () => {
 		<>
 			<Switch>
 				<Route exact path={path}>
-					<h1 className="underline">Projects</h1>
-					<Filter
-						projects={projects}
-						setFiltered={setFiltered}
-						activeTag={activeTag}
-						setActiveTag={setActiveTag}
-					/>
 					<motion.div
-						layout
-						className="grid gap-2 grid-cols-1 lg:grid-cols-2 mt-4"
+						initial={{ y: 10, opacity: 0 }}
+						animate={{ y: 0, opacity: 1 }}
+						exit={{ y: -10, opacity: 0 }}
+						transition={{ duration: 0.8 }}
 					>
-						<AnimatePresence>
-							{filtered.map((project) => {
-								return (
-									<Link key={project.id} to={`${url}/${project.id}`}>
-										<CardProject
-											title={project.title}
-											subtitle={project.subtitle}
-											image_path={project.image_path}
-										/>
-									</Link>
-								);
-							})}
-						</AnimatePresence>
+						<h1 className="underline">Projects</h1>
+						<Filter
+							projects={projects}
+							setFiltered={setFiltered}
+							activeTag={activeTag}
+							setActiveTag={setActiveTag}
+						/>
+						<motion.div
+							layout
+							className="grid gap-2 grid-cols-1 lg:grid-cols-2 mt-4"
+						>
+							<AnimatePresence>
+								{filtered.map((project) => {
+									return (
+										<Link key={project.id} to={`${url}/${project.id}`}>
+											<CardProject
+												title={project.title}
+												subtitle={project.subtitle}
+												image_path={project.image_path}
+											/>
+										</Link>
+									);
+								})}
+							</AnimatePresence>
+						</motion.div>
 					</motion.div>
 				</Route>
 				<Route path={`${path}/:projectId`}>

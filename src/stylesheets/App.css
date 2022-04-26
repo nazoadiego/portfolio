@@ -1,28 +1,27 @@
 /* Fonts */
 body {
-	font-family: "Montserrat", "Helvetica", "sans-serif";
+	font-family: "M PLUS Rounded 1c", "Montserrat", "Helvetica", sans-serif;
 }
 
 /* Animations */
-canvas {
+/* canvas {
 	height: 35vh;
-}
+} */
 
 /* Cards */
-
 .rounded-left {
 	border-radius: 0.5rem 0 0 0.5rem;
 }
 
 /* List */
-li {
+/* li {
 	list-style: none;
 }
 
 li:before {
 	content: "• ";
-	color: #3845ca; /* or whatever color you prefer */
-}
+	color: #3845ca;
+} */
 
 /* Tooltip */
 .tooltip {
@@ -37,15 +36,6 @@ li:before {
 
 .hasTooltip:hover svg {
 	display: none;
-}
-
-/* Navbar */
-.nav-item {
-	line-height: 3.5rem;
-	display: flex;
-	justify-content: center;
-	transition: 0.3s;
-	color: white;
 }
 
 /* Card */

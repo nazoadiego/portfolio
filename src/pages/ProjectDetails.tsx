@@ -24,7 +24,7 @@ const ProjectDetails: FC = () => {
 	});
 
 	return (
-		<div className="grid grid-cols 1 lg:gap-8 lg:grid-cols-2">
+		<div className="grid grid-cols-1 lg:gap-8 lg:grid-cols-2">
 			<div className="flex flex-col">
 				<h5 className="uppercase font-thin">{subtitle}</h5>
 				<h2>{title}</h2>
@@ -46,7 +46,7 @@ const ProjectDetails: FC = () => {
 						Github
 					</a>
 				</div>
-				<div className="prose lg:prose-xl dark:prose-invert mt-4">
+				<div className="prose-base lg:prose-xl dark:prose-invert mt-4">
 					<h3>Project</h3>
 					<p>{overview}</p>
 					<h3>Project Difficulties</h3>
@@ -60,7 +60,7 @@ const ProjectDetails: FC = () => {
 					src={require("../images/" + image_path + ".webp")}
 					fallback={require("../images/" + image_path + ".jpg")}
 					alt={title + ". " + subtitle}
-					className="mt-4 animate-appear2 shadow-lg rounded-lg xl:rounded-lg
+					className="mt-4 shadow-lg rounded-lg xl:rounded-lg
 				aspect-2"
 				/>
 				<div className="prose lg:prose-xl dark:prose-invert mt-8">
