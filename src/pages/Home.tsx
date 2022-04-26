@@ -6,12 +6,20 @@ import { OrbitControls } from "@react-three/drei";
 import { FC } from "react";
 import Contact from "../components/contact/Contact";
 import TechnologiesGrid from "../components/TechnologiesGrid";
-import RecentProject from "../components/projects/RecentProject";
+import { motion } from "framer-motion";
+import projects from "../content/ProjectsInfo";
+import CardProjectHome from "../components/projects/CardProjectHome";
 
 const HomePage: FC = () => {
 	return (
-		<div className="lg:px-12 space-y-8">
-			<div className="animate-appear flex flex-col lg:flex-row py-12">
+		<motion.div
+			initial={{ opacity: 0, y: 10 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.8 }}
+			className="lg:px-12 space-y-8"
+		>
+			<div className="flex flex-col lg:flex-row py-12">
 				<Canvas className="canvas">
 					<OrbitControls enableZoom={false} />
 					<ambientLight intensity={0.5} />
@@ -56,17 +64,19 @@ const HomePage: FC = () => {
 			</article>
 			<article className="space-y-8">
 				<h3>My Skills</h3>
-				<p>
-					I have a strong background in web development and I'm always looking
-					for new opportunities to learn and improve my skills. I'm a
-					self-taught developer with a strong background in Ruby on Rails and
-					JavaScript.
-				</p>
 				<TechnologiesGrid />
 			</article>
-			<RecentProject />
+			<section className="space-y-8">
+				{projects.map((project, index) => (
+					<CardProjectHome
+						key={project.id}
+						project={project}
+						reversed={index % 2 === 0 ? true : false}
+					/>
+				))}
+			</section>
 			<Contact />
-		</div>
+		</motion.div>
 	);
 };
 

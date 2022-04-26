@@ -5,7 +5,7 @@ const ContactIcons: FC = () => {
 	return (
 		<>
 			<a href="https://github.com/nazoadiego">
-				<div className="about-card animate-appear4 bg-flowerblue-900 py-[10px]">
+				<div className="about-card bg-flowerblue-900 py-[10px]">
 					<h3>
 						<FaGithub />
 					</h3>
@@ -13,14 +13,14 @@ const ContactIcons: FC = () => {
 			</a>
 
 			<a href="https://linkedin.com/in/nazoa-diego/">
-				<div className="about-card animate-appear4 bg-flowerblue-800 py-[10px]">
+				<div className="about-card bg-flowerblue-800 py-[10px]">
 					<h3>
 						<FaLinkedinIn />
 					</h3>
 				</div>
 			</a>
 
-			<div className="about-card animate-appear4 bg-flowerblue-700 py-[10px]">
+			<div className="about-card bg-flowerblue-700 py-[10px]">
 				<h3>
 					<a href="#contact">
 						<FaEnvelope />
@@ -29,7 +29,7 @@ const ContactIcons: FC = () => {
 			</div>
 
 			<a href="https://twitter.com/nzoadiego/">
-				<div className="about-card animate-appear4 bg-flowerblue-600 py-[10px]">
+				<div className="about-card bg-flowerblue-600 py-[10px]">
 					<h3>
 						<FaTwitter />
 					</h3>

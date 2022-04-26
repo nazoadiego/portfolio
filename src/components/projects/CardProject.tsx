@@ -20,9 +20,10 @@ const CardProject: FC<CardProps> = (props) => {
 				src={require("../../images/" + image_path + ".jpg")}
 				alt={title + ". " + subtitle}
 				layout
-				animate={{ opacity: 1 }}
 				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
+				transition={{ duration: 0.4 }}
 				className="h-full w-full shadow-lg rounded-lg xl:rounded-lg aspect-2"
 			/>
 		</picture>

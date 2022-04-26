@@ -103,7 +103,7 @@ const projects: Project[] = [
       it was very important that we had good communication and deadlines to put
       the work we had been doing together with Git/Github. Going from Bootstrap
       to Tailwind took a lot of time, but it was simple enough and worth it in
-      end.From Bootstrap I learned the benefit of using a framework for CSS. Namely, that it
+      end. From Bootstrap I learned the benefit of using a framework for CSS. Namely, that it
       gave structure and uniformity when working together. From Tailwind I learned
       about the importance of writing scalable and easier to customize CSS, while
       keeping the advantages of using an utility first framework.`,

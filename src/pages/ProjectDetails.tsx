@@ -60,7 +60,7 @@ const ProjectDetails: FC = () => {
 					src={require("../images/" + image_path + ".webp")}
 					fallback={require("../images/" + image_path + ".jpg")}
 					alt={title + ". " + subtitle}
-					className="mt-4 animate-appear2 shadow-lg rounded-lg xl:rounded-lg
+					className="mt-4 shadow-lg rounded-lg xl:rounded-lg
 				aspect-2"
 				/>
 				<div className="prose lg:prose-xl dark:prose-invert mt-8">
