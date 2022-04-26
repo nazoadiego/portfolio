@@ -21,8 +21,8 @@ const Nav: FC = () => {
 	return (
 		<nav className="flex justify-between items-center flex-wrap py-6">
 			{/* Navbar desktop */}
-			<div>
-				<h4>Nzoa Portfolio</h4>
+			<div className="basis-0">
+				<h4>Nzoa's Portfolio</h4>
 			</div>
 			<div className="hidden sm:block">
 				<ul className="inline-flex gap-8">
@@ -34,9 +34,9 @@ const Nav: FC = () => {
 				{/* Dark Mode Toggle */}
 				<button
 					onClick={toggleTheme}
-					className="w-full flex justify-center py-2"
+					className="justify-center py-2 flex-grow basis-0"
 				>
-					<h3 className="bg-[] hover:text-flowerblue-600 active:hover:text-flowerblue-600">
+					<h3 className="hover:text-flowerblue-600 active:hover:text-flowerblue-600">
 						{!darkMode && <FaMoon />}
 						{darkMode && <FaSun />}
 					</h3>
